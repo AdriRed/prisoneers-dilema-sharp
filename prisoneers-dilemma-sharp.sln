@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prisoneers-dilemma.Backend", "prisoneers-dilemma.Backend\prisoneers-dilemma.Backend.csproj", "{D7EFF4E7-E37F-48C2-A523-0485575EA9EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prisoneers-dilemma.Frontend", "prisoneers-dilemma.Frontend\prisoneers-dilemma.Frontend.csproj", "{C2CF40DA-8287-430F-973A-573409188510}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7EFF4E7-E37F-48C2-A523-0485575EA9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EFF4E7-E37F-48C2-A523-0485575EA9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EFF4E7-E37F-48C2-A523-0485575EA9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EFF4E7-E37F-48C2-A523-0485575EA9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CF40DA-8287-430F-973A-573409188510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CF40DA-8287-430F-973A-573409188510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CF40DA-8287-430F-973A-573409188510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CF40DA-8287-430F-973A-573409188510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {182DBA0D-264D-4FBB-94C2-937402ACF813}
+	EndGlobalSection
+EndGlobal

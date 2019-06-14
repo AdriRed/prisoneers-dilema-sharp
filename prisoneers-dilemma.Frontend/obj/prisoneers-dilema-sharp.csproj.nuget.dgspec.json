@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp.csproj",
+        "projectName": "prisoneers-dilema-sharp",
+        "projectPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp.csproj",
+        "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilema-sharp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\arojo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
