@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj",
+      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj",
       "projectName": "prisoneers-dilemma.Backend",
-      "projectPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj",
+      "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj",
       "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\obj\\",
+      "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

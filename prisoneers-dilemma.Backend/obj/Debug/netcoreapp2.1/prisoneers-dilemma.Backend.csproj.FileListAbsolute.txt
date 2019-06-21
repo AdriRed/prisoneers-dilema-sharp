@@ -1,0 +1,9 @@
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.csprojAssemblyReference.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.csproj.CoreCompileInputs.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.AssemblyInfoInputs.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.AssemblyInfo.cs
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.deps.json
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.dll
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.pdb
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.dll
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Backend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.pdb

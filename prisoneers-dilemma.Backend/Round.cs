@@ -4,29 +4,54 @@ using System.Text;
 
 namespace prisoneers_dilema.Backend
 {
-    class Round
+    public class Round
     {
-        private IPlayer _player1;
-        private IPlayer _player2;
+        private Player _player1;
+        private Player _player2;
+        private ILogic _rules;
 
-        public IPlayer Player2
+        public RoundData Data { get; private set; }
+
+        public Round(Player player1, Player player2, ILogic rules)
         {
-            get { return _player2; }
-            set { _player2 = value; }
+            _player1 = player1;
+            _player2 = player2;
+            _rules = rules;
         }
-        public IPlayer Player1
+
+        private void GetMoves()
         {
-            get { return _player1; }
-            set { _player1 = value; }
+            _player1.NewMove();
+            _player2.NewMove();
         }
 
-        /*
-         * All info.
-         * Last money, difference, option, etc...
-         * 
-         */
+        public void Execute()
+        {
+            GetMoves();
+            _rules.Decide(_player1, _player2);
+            SaveData();
+        }
 
+        public void SaveData()
+        {
+            Data = new RoundData(_player1, _player2, _rules);
+        }
 
+    }
 
+    public struct RoundData
+    {
+        public string[] Names;
+        public Player.Selection[] Selections;
+        public float[] DeltaMoney;
+        public float[] MoneyBefore;
+
+        public RoundData(Player player1, Player player2, ILogic logic)
+        {
+            Names = new string[] { player1.Name, player2.Name };
+            Selections = new Player.Selection[] { player1.Cooperate, player2.Cooperate };
+            DeltaMoney = logic.Distribution[(int)Selections[0]][(int)Selections[1]];
+            MoneyBefore = new float[] { player1.Money - DeltaMoney[0], player2.Money - DeltaMoney[1] };
+        }
     }
 }

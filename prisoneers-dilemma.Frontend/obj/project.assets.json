@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\prisoneers-dilemma.Frontend.csproj",
+      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\prisoneers-dilemma.Frontend.csproj",
       "projectName": "prisoneers-dilemma.Frontend",
-      "projectPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\prisoneers-dilemma.Frontend.csproj",
+      "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\prisoneers-dilemma.Frontend.csproj",
       "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\obj\\",
+      "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj": {
-              "projectPath": "C:\\Users\\arojo\\Desktop\\Visual Studio Projects\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj"
+            "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj": {
+              "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\prisoneers-dilema-sharp\\prisoneers-dilemma.Backend\\prisoneers-dilemma.Backend.csproj"
             }
           }
         }
