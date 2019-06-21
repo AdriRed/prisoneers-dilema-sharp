@@ -10,7 +10,7 @@ namespace prisoneers_dilema.Backend.Displays
 
         public virtual void ShowInfo(Player player, bool writeline)
         {
-            string info = String.Format("{0}: {1}", player.Name, player.Money.ToString(moneyFormat));
+            string info = String.Format("{0}({1}): {2}", player.Data.Name, player.Data.Id, player.Money.ToString(moneyFormat));
             if (writeline)
             {
                 Console.WriteLine(info);
@@ -47,7 +47,7 @@ namespace prisoneers_dilema.Backend.Displays
 
         public virtual void ShowInfo(GameData game, bool writeline)
         {
-            Console.WriteLine("------------------{0} vs. {1}--------------------", game.Names[0], game.Names[1]);
+            Console.WriteLine("------------------{0} vs. {1}--------------------", game.Players[0].Name, game.Players[1].Name);
             ShowRoundHistory(game.History);
             Console.WriteLine("---------------------TOTALS----------------------");
 
@@ -69,11 +69,12 @@ namespace prisoneers_dilema.Backend.Displays
         {
             Console.WriteLine("--------------------Matches----------------------");
             ShowMatches(league.Matches);
-            
+            Console.WriteLine();
             ShowGameHistory(league.History);
-            Console.WriteLine("---------------------TOTALS----------------------");
+            Console.WriteLine();
+            Console.WriteLine("---------------------League finished----------------------");
             ShowPlayers(league.Players);
-            Console.WriteLine("---------------------END----------------------");
+            Console.WriteLine();
         }
 
         private void ShowPlayers(Player[] players)
@@ -88,7 +89,7 @@ namespace prisoneers_dilema.Backend.Displays
         {
             foreach (Match match in matches)
             {
-                Console.WriteLine(" {0} vs. {1} ", match.Player1.Name, match.Player2.Name);
+                Console.WriteLine(" {0} vs. {1} ", match.Player1.Data.Name, match.Player2.Data.Name);
             }
         }
 
@@ -103,7 +104,7 @@ namespace prisoneers_dilema.Backend.Displays
         private void PlayerGameInfo(GameData data, int player)
         {
             string info = String.Format("{0} {1} ({2})",
-                data.Names[player], data.TotalMoney[player].ToString(moneyFormat), 
+                data.Players[player].Name, data.TotalMoney[player].ToString(moneyFormat), 
                 data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);
@@ -112,7 +113,7 @@ namespace prisoneers_dilema.Backend.Displays
         private void PlayerRoundInfo(RoundData data, int player)
         {
             string info = String.Format("{0} {1} Cooperate? {2} ({3})",
-                data.Names[player], data.MoneyBefore[player].ToString(moneyFormat), 
+                data.Players[player].Name, data.MoneyBefore[player].ToString(moneyFormat), 
                 data.Selections[player], data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);

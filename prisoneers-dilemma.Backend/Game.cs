@@ -74,13 +74,13 @@ namespace prisoneers_dilema.Backend
     public struct GameData
     {
         public List<RoundData> History;
-        public string[] Names;
+        public PlayerData[] Players;
         public float[] DeltaMoney, TotalMoney;
 
         public GameData(Player player1, Player player2, List<RoundData> history)
         {
             History = history;
-            Names = new string[] { player1.Name, player2.Name };
+            Players = new PlayerData[] { player1.Data, player2.Data };
             DeltaMoney = new float[] { player1.Money, player2.Money };
             TotalMoney = new float[] { player1.Money, player2.Money };
         }

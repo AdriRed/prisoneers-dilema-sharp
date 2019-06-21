@@ -41,17 +41,19 @@ namespace prisoneers_dilema.Backend
 
     public struct RoundData
     {
-        public string[] Names;
+        public PlayerData[] Players;
         public Player.Selection[] Selections;
         public float[] DeltaMoney;
         public float[] MoneyBefore;
+        public ILogic Logic;
 
         public RoundData(Player player1, Player player2, ILogic logic)
         {
-            Names = new string[] { player1.Name, player2.Name };
+            Players = new PlayerData[] { player1.Data, player2.Data };
             Selections = new Player.Selection[] { player1.Cooperate, player2.Cooperate };
             DeltaMoney = logic.Distribution[(int)Selections[0]][(int)Selections[1]];
             MoneyBefore = new float[] { player1.Money - DeltaMoney[0], player2.Money - DeltaMoney[1] };
+            Logic = logic;
         }
     }
 }
