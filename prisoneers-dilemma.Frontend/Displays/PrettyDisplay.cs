@@ -8,12 +8,18 @@ namespace prisoneers_dilema.Frontend.Displays
     class PrettyDisplay : IDisplay
     {
         private string moneyFormat = "+0.00$;-0.00$";
-        private string nameFormat = "                      ";
+        private int minLengthName = 15;
+        private int minLengthCooperate = 3;
+        private int minLengthMoney = 8;
 
 
         public virtual void ShowInfo(Player player, bool writeline)
         {
-            string info = String.Format("{0}({1}): {2}", player.Data.Name.ToString(, player.Data.Id, player.Money.ToString(moneyFormat));
+            string info = String.Format("{0}({1}): {2}", 
+                player.Data.Name.PadRight(minLengthName, ' '), 
+                player.Data.Id.ToString("00"), 
+                player.Money.ToString(moneyFormat).PadRight(minLengthMoney, ' ') );
+
             if (writeline)
             {
                 Console.WriteLine(info);
@@ -52,7 +58,10 @@ namespace prisoneers_dilema.Frontend.Displays
 
         public virtual void ShowInfo(GameData game, bool writeline)
         {
-            Console.WriteLine("------------------{0} vs. {1}--------------------", game.Players[0].Name, game.Players[1].Name);
+            Console.WriteLine("------------{0} vs. {1}--------------", 
+                game.Players[0].Name.PadLeft(minLengthName, '-'), 
+                game.Players[1].Name.PadRight(minLengthName, '-') );
+
             ShowRoundHistory(game.History);
             Console.WriteLine("---------------------TOTALS----------------------");
 
@@ -68,6 +77,9 @@ namespace prisoneers_dilema.Frontend.Displays
                 Console.Write(" ");
                 PlayerGameInfo(game, 1);
             }
+
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         public void ShowInfo(LeagueData league)
@@ -94,7 +106,9 @@ namespace prisoneers_dilema.Frontend.Displays
         {
             foreach (Match match in matches)
             {
-                Console.WriteLine(" {0} vs. {1} ", match.Player1.Data.Name, match.Player2.Data.Name);
+                Console.WriteLine(" {0} vs. {1} ", 
+                    match.Player1.Data.Name.PadRight(minLengthName, ' ') , 
+                    match.Player2.Data.Name.PadRight(minLengthName, ' ') );
             }
         }
 
@@ -109,7 +123,8 @@ namespace prisoneers_dilema.Frontend.Displays
         private void PlayerGameInfo(GameData data, int player)
         {
             string info = String.Format("{0} {1} ({2})",
-                data.Players[player].Name, data.TotalMoney[player].ToString(moneyFormat),
+                data.Players[player].Name.PadRight(minLengthName, ' '), 
+                data.TotalMoney[player].ToString(moneyFormat).PadRight(minLengthMoney, ' '),
                 data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);
@@ -118,8 +133,10 @@ namespace prisoneers_dilema.Frontend.Displays
         private void PlayerRoundInfo(RoundData data, int player)
         {
             string info = String.Format("{0} {1} Cooperate? {2} ({3})",
-                data.Players[player].Name, data.MoneyBefore[player].ToString(moneyFormat),
-                data.Selections[player], data.DeltaMoney[player].ToString(moneyFormat));
+                data.Players[player].Name.PadRight(minLengthName, ' '), 
+                data.MoneyBefore[player].ToString(moneyFormat).PadRight(minLengthMoney, ' '),
+                data.Selections[player].ToString().PadRight(minLengthCooperate, ' '), 
+                data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);
         }
