@@ -51,7 +51,7 @@ namespace prisoneers_dilema.Backend
         {
             Players = new PlayerData[] { player1.Data, player2.Data };
             Selections = new Player.Selection[] { player1.Cooperate, player2.Cooperate };
-            DeltaMoney = logic.Distribution[(int)Selections[0]][(int)Selections[1]];
+            DeltaMoney = logic.Rewards(Selections[0], Selections[1]);
             MoneyBefore = new float[] { player1.Money - DeltaMoney[0], player2.Money - DeltaMoney[1] };
             Logic = logic;
         }

@@ -8,10 +8,13 @@ namespace prisoneers_dilema.Backend
     {
 
         public static int PlayerCount;
+
+        public int InGamePlayer;
+
         public enum Selection
         {
-            Yes,    //0
-            No      //1
+            No,    //0
+            Yes      //1
         };
 
         private float _money;
@@ -28,7 +31,7 @@ namespace prisoneers_dilema.Backend
             PlayerCount = 0;
         }
 
-        public Player (float money, string name)
+        public Player (float money, string name = "Default Player")
         {
             Money = money;
             Data = new PlayerData(PlayerCount, name);

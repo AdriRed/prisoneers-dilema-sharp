@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using prisoneers_dilema.Backend;
 using System.Text;
 
-namespace prisoneers_dilema.Backend.Displays
+namespace prisoneers_dilema.Frontend.Displays
 {
     public class DefaultDisplay : IDisplay
     {

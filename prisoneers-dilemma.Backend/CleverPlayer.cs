@@ -6,11 +6,12 @@ namespace prisoneers_dilema.Backend
 {
     public abstract class CleverPlayer : Player
     {
-        protected List<RoundData> History;
+        public List<RoundData> History;
+        public ILogic FollowingLogic;
 
-        public CleverPlayer(float money, string name, List<RoundData> history) : base(money, name)
+        public CleverPlayer(float money, string name = "Clever player") : base(money, name)
         {
-            History = history;
+
         }
     }
 }

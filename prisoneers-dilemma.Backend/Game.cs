@@ -16,6 +16,22 @@ namespace prisoneers_dilema.Backend
             Rules = rules;
             History = new List<RoundData>();
             Data = new GameData(Player1, Player2, History);
+
+            players.Player1.InGamePlayer = 0;
+            if (players.Player1 is CleverPlayer clever)
+            {
+                clever.History = History;
+                clever.FollowingLogic = rules;
+            }
+                
+
+            players.Player2.InGamePlayer = 1;
+            if (players.Player2 is CleverPlayer clever2)
+            {
+                clever2.History = History;
+                clever2.FollowingLogic = rules;
+            }
+                
         }
 
         public Player Player2
