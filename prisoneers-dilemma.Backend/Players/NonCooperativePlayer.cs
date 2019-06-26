@@ -6,7 +6,7 @@ namespace prisoneers_dilema.Backend.Players
 {
     public class NonCooperativePlayer : Player
     {
-        public NonCooperativePlayer(float money, string name = "Maquiavelo") : base(money, name)
+        public NonCooperativePlayer(float money = 0f, string name = "Maquiavelo") : base(money, name)
         {
 
         }

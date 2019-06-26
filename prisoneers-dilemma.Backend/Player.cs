@@ -6,15 +6,14 @@ namespace prisoneers_dilema.Backend
 {
     public abstract class Player
     {
-
         public static int PlayerCount;
 
         public int InGamePlayer;
 
         public enum Selection
         {
-            No,    //0
-            Yes      //1
+            Yes,    //0
+            No      //1
         };
 
         private float _money;
@@ -36,11 +35,6 @@ namespace prisoneers_dilema.Backend
             Money = money;
             Data = new PlayerData(PlayerCount, name);
             PlayerCount++;
-        }
-
-        public int Id
-        {
-            get; private set;
         }
 
         public float Money

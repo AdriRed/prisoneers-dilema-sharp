@@ -6,9 +6,7 @@ namespace prisoneers_dilema.Backend
 {
     public class Game
     {
-        private ILogic _rules;
         protected Match Players;
-        public GameData Data { get; private set; }
 
         public Game(Match players, ILogic rules)
         {
@@ -18,6 +16,7 @@ namespace prisoneers_dilema.Backend
             Data = new GameData(Player1, Player2, History);
 
             players.Player1.InGamePlayer = 0;
+
             if (players.Player1 is CleverPlayer clever)
             {
                 clever.History = History;
@@ -34,6 +33,7 @@ namespace prisoneers_dilema.Backend
                 
         }
 
+        public GameData Data { get; private set; }
         public Player Player2
         {
             get { return Players.Player2; }
@@ -46,8 +46,7 @@ namespace prisoneers_dilema.Backend
 
         public ILogic Rules
         {
-            get { return _rules; }
-            private set { _rules = value; }
+            get; private set;
         }
 
         public void SaveData()

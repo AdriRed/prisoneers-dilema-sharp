@@ -9,7 +9,7 @@ namespace prisoneers_dilema.Backend.Players
         private float _trueProbablility;
         private Random rd;
 
-        public RandomPlayer(float money, float trueProbability = 0.5f, string name = "Tuntun") : base(money, name)
+        public RandomPlayer(float money = 0f, string name = "Tuntun", float trueProbability = 0.5f) : base(money, name)
         {
             rd = new Random();
             _trueProbablility = trueProbability;

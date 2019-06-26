@@ -49,7 +49,7 @@ namespace prisoneers_dilema.Frontend.Displays
 
         private void ShowRoundHistory(List<RoundData> history)
         {
-            Console.WriteLine("------------------Round History------------------");
+            Console.WriteLine("\n------------------Round History------------------");
             foreach (RoundData item in history)
             {
                 ShowInfo(item, true);
@@ -63,7 +63,7 @@ namespace prisoneers_dilema.Frontend.Displays
                 game.Players[1].Name.PadRight(minLengthName, '-') );
 
             ShowRoundHistory(game.History);
-            Console.WriteLine("---------------------TOTALS----------------------");
+            Console.WriteLine("\n---------------------TOTALS----------------------");
 
             PlayerGameInfo(game, 0);
             if (writeline)

@@ -13,20 +13,27 @@ namespace prisoneers_dilema.Frontend
         {
             ILogic logic = new DefaultLogic();
             Player[] players = {
-                new CooperativePlayer(0f),
-                new NonCooperativePlayer(0f),
+
+                new CooperativePlayer(),
+                new NonCooperativePlayer(),
                 new RandomPlayer(0f),
-                new MyPlayer(0f, "Este es Listo"),
-                new MyPlayer(0f, "Este tambien")
+                new OppositeLastPlayer(0f, "opposite"),
+                new MirrorPlayer(0f, "mirror"),
+                new RegresivePlayer(),
+                new YourLastPlayer()
+
+
             };
-            League league = new AllVsAll(players, logic, 10);
+            League league;
             IDisplay display = new PrettyDisplay();
 
+            league = new AllVsAll(players, logic, 15);
             league.Start();
-            LeagueData data = league.Data;
+            display.ShowInfo(league.Data);
 
-            display.ShowInfo(data);
-            
+            //league = new Tournament(players, logic, 50);
+            //league.Start();
+            //display.ShowInfo(league.Data);
         }
     }
 }

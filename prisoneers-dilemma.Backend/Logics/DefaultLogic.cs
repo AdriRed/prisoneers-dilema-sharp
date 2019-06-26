@@ -7,7 +7,8 @@ namespace prisoneers_dilema.Backend.Logics
 {
     public class DefaultLogic : ILogic
     {
-        /*                     P2         P2
+        /*
+         *                      P2         P2
          *  -------------------------------------
          *      |  (P1,P2) |   No    |    Yes   |
          *  -------------------------------------
@@ -15,6 +16,7 @@ namespace prisoneers_dilema.Backend.Logics
          *  -------------------------------------
          *  P1  |    Yes   | (5, -5) |  (3, 3)  |
          *  -------------------------------------
+         *  
          */
 
         protected float[][] _player1Distribution = new float[2][]
