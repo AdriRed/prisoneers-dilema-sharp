@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using prisoneers_dilema.Backend.Logics;
 using prisoneers_dilema.Backend.Players;
 
 namespace prisoneers_dilema.Backend
@@ -20,6 +21,11 @@ namespace prisoneers_dilema.Backend
             Matches = new List<Match>();
             SetMatches(players);
             Players = players;
+        }
+
+        public League(Player[] players, float[][] player1Payments, float[][] player2Payments) : this(players, new CustomLogic(player1Payments, player2Payments))
+        {
+
         }
 
         protected abstract void SetMatches(Player[] players);

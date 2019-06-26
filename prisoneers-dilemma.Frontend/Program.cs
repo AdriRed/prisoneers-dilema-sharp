@@ -11,7 +11,7 @@ namespace prisoneers_dilema.Frontend
     {
         static void Main(string[] args)
         {
-            ILogic logic = new DefaultLogic();
+            ILogic logic = new Chicken();
             Player[] players = {
 
                 new CooperativePlayer(),

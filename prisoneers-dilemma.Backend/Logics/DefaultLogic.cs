@@ -19,17 +19,29 @@ namespace prisoneers_dilema.Backend.Logics
          *  
          */
 
-        protected float[][] _player1Distribution = new float[2][]
+        protected virtual float[][] Player1Distribution
         {
-            new float[2]{-1f, -5f},
-            new float[2]{5f, 3f}
-        };
+            get
+            {
+                return new float[2][]
+                    {
+                        new float[2]{-1f, -5f},
+                        new float[2]{5f, 3f}
+                    };
+            }
+        }
 
-        protected float[][] _player2Distribution = new float[2][]
+        protected virtual float[][] Player2Distribution
         {
-            new float[2]{-1f, 5f},
-            new float[2]{-5f, 3f}
-        };
+            get
+            {
+                return new float[2][]
+                    {
+                        new float[2]{-1f, 5f},
+                        new float[2]{-5f, 3f}
+                    };
+            }
+        }
 
         public void Decide(Player player1, Player player2)
         {
@@ -39,11 +51,11 @@ namespace prisoneers_dilema.Backend.Logics
             player2.Money += rewards[1];
         }
 
-        public float[] Rewards(Player.Selection player1, Player.Selection player2)
+        public virtual float[] Rewards(Player.Selection player1, Player.Selection player2)
         {
             float[] rewards = new float[2] {
-                _player1Distribution[ (int) player1 ][ (int) player2 ],
-                _player2Distribution[ (int) player1 ][ (int) player2 ]
+                Player1Distribution[ (int) player1 ][ (int) player2 ],
+                Player2Distribution[ (int) player1 ][ (int) player2 ]
             };
 
             return rewards;
