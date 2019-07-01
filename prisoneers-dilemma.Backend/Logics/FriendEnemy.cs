@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend.Logics
+﻿namespace prisoneers_dilema.Backend.Logics
 {
-    public class FriendEnemy : DefaultLogic
+    public class FriendEnemy : Logic
     {
+
         /*
          *                      P2         P2
          *  -------------------------------------
@@ -18,28 +15,21 @@ namespace prisoneers_dilema.Backend.Logics
          *  
          */
 
-        protected override float[][] Player1Distribution
+
+        private static readonly float[][] p1Rewards = new float[2][] {
+                                                                new float[2]{1f, 0f},
+                                                                new float[2]{2f, 0f}
+                                                            };
+
+        private static readonly float[][] p2Rewards = new float[2][] {
+                                                                new float[2]{1f, 2f},
+                                                                new float[2]{0f, 0f}
+                                                            };
+
+        public FriendEnemy() : base(p1Rewards, p2Rewards)
         {
-            get
-            {
-                return new float[2][]
-                    {
-                        new float[2]{1f, 0f},
-                        new float[2]{2f, 0f}
-                    };
-            }
+
         }
 
-        protected override float[][] Player2Distribution
-        {
-            get
-            {
-                return new float[2][]
-                    {
-                        new float[2]{1f, 2f},
-                        new float[2]{0f, 0f}
-                    };
-            }
-        }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using prisoneers_dilema.Backend.Logics;
-using prisoneers_dilema.Backend.Players;
+﻿using System.Collections.Generic;
 
 namespace prisoneers_dilema.Backend
 {
@@ -13,8 +8,8 @@ namespace prisoneers_dilema.Backend
         public List<GameData> History { get; protected set; }
         public LeagueData Data { get; protected set; }
         public Player[] Players { get; protected set; }
-        protected ILogic Rules;
-        public League(Player[] players, ILogic rules)
+        protected Logic Rules;
+        public League(Player[] players, Logic rules)
         {
             Rules = rules;
             History = new List<GameData>();
@@ -23,7 +18,8 @@ namespace prisoneers_dilema.Backend
             Players = players;
         }
 
-        public League(Player[] players, float[][] player1Payments, float[][] player2Payments) : this(players, new CustomLogic(player1Payments, player2Payments))
+        public League(Player[] players, float[][] player1Payments, float[][] player2Payments)
+            : this(players, new Logic(player1Payments, player2Payments))
         {
 
         }

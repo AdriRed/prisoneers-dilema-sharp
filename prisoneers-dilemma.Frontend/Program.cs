@@ -1,9 +1,8 @@
-﻿using System;
-using prisoneers_dilema.Backend.Players;
-using prisoneers_dilema.Backend.Logics;
-using prisoneers_dilema.Frontend.Displays;
+﻿using prisoneers_dilema.Backend;
 using prisoneers_dilema.Backend.Leagues;
-using prisoneers_dilema.Backend;
+using prisoneers_dilema.Backend.Logics;
+using prisoneers_dilema.Backend.Players;
+using prisoneers_dilema.Frontend.Displays;
 
 namespace prisoneers_dilema.Frontend
 {
@@ -11,7 +10,7 @@ namespace prisoneers_dilema.Frontend
     {
         static void Main(string[] args)
         {
-            ILogic logic = new Chicken();
+            Logic logic = new DefaultLogic();
             Player[] players = {
 
                 new CooperativePlayer(),

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace prisoneers_dilema.Backend.Leagues
 {
@@ -10,9 +9,15 @@ namespace prisoneers_dilema.Backend.Leagues
         public int RoundsPerGame;
 
 
-        public Tournament(Player[] players, ILogic rules, int roundsPerGame) : base(players, rules)
+        public Tournament(Player[] players, Logic rules, int roundsPerGame) : base(players, rules)
         {
             RoundsPerGame = roundsPerGame;
+        }
+
+        public Tournament(Player[] players, float[][] player1Payments, float[][] player2Payments, int roundsPerGame)
+            : this(players, new Logic(player1Payments, player2Payments), roundsPerGame)
+        {
+
         }
 
         protected override void SetMatches(Player[] players)
@@ -26,7 +31,8 @@ namespace prisoneers_dilema.Backend.Leagues
                 {
                     Matches.Add(new Match(players[i * 2], players[i * 2 + 1]));
                 }
-            } else
+            }
+            else
             {
                 _lonelyPlayerIndex = (new Random()).Next(players.Length);
 
@@ -40,7 +46,8 @@ namespace prisoneers_dilema.Backend.Leagues
                         {
                             Matches.Add(new Match(players[matchPlayer1Index], players[i]));
                             matchPlayer1Index = -1;
-                        } else
+                        }
+                        else
                         {
                             matchPlayer1Index = i;
                         }
@@ -90,17 +97,18 @@ namespace prisoneers_dilema.Backend.Leagues
                 History[index].Players[1].Id;
 
             Player winner = FindPlayer(id);
-            
+
             if (winner == null)
             {
                 throw new Exception("Error 404 Player Not Found");
-            } else
+            }
+            else
             {
                 return winner;
             }
         }
 
-        private Player FindPlayer (int id)
+        private Player FindPlayer(int id)
         {
             Player target = null;
             bool found = false;

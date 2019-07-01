@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend.Players
+﻿namespace prisoneers_dilema.Backend.Players
 {
     public class YourLastPlayer : CleverPlayer
     {
@@ -12,8 +8,8 @@ namespace prisoneers_dilema.Backend.Players
 
         public override void NewMove()
         {
-            int otherPlayerIndex = InGamePlayer == 0 ? 
-                1 
+            int otherPlayerIndex = InGamePlayer == 0 ?
+                1
                 : 0;
 
             Selection last = GetLastSelection(otherPlayerIndex);

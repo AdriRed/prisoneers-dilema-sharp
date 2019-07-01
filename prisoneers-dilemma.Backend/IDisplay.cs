@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend
+﻿namespace prisoneers_dilema.Backend
 {
     public interface IDisplay
     {

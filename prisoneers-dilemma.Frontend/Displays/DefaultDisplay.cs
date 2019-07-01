@@ -1,7 +1,6 @@
-﻿using System;
+﻿using prisoneers_dilema.Backend;
+using System;
 using System.Collections.Generic;
-using prisoneers_dilema.Backend;
-using System.Text;
 
 namespace prisoneers_dilema.Frontend.Displays
 {
@@ -15,7 +14,8 @@ namespace prisoneers_dilema.Frontend.Displays
             if (writeline)
             {
                 Console.WriteLine(info);
-            } else
+            }
+            else
             {
                 Console.Write(info);
             }
@@ -30,7 +30,8 @@ namespace prisoneers_dilema.Frontend.Displays
                 PlayerRoundInfo(round, 1);
                 Console.WriteLine();
                 Console.WriteLine("-------------------");
-            } else
+            }
+            else
             {
                 Console.Write(" ");
                 PlayerRoundInfo(round, 1);
@@ -105,7 +106,7 @@ namespace prisoneers_dilema.Frontend.Displays
         private void PlayerGameInfo(GameData data, int player)
         {
             string info = String.Format("{0} {1} ({2})",
-                data.Players[player].Name, data.TotalMoney[player].ToString(moneyFormat), 
+                data.Players[player].Name, data.TotalMoney[player].ToString(moneyFormat),
                 data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);
@@ -114,7 +115,7 @@ namespace prisoneers_dilema.Frontend.Displays
         private void PlayerRoundInfo(RoundData data, int player)
         {
             string info = String.Format("{0} {1} Cooperate? {2} ({3})",
-                data.Players[player].Name, data.MoneyBefore[player].ToString(moneyFormat), 
+                data.Players[player].Name, data.MoneyBefore[player].ToString(moneyFormat),
                 data.Selections[player], data.DeltaMoney[player].ToString(moneyFormat));
 
             Console.Write(info);

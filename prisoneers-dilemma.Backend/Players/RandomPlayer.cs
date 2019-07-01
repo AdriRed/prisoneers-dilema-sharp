@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace prisoneers_dilema.Backend.Players
 {
@@ -16,9 +14,9 @@ namespace prisoneers_dilema.Backend.Players
         }
         public override void NewMove()
         {
-            Cooperate = rd.NextDouble() < _trueProbablility ? 
-                Selection.Yes 
-                : Selection.No ;
+            Cooperate = rd.NextDouble() < _trueProbablility ?
+                Selection.Yes
+                : Selection.No;
         }
     }
 }

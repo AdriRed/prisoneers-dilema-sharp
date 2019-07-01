@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend.Players
+﻿namespace prisoneers_dilema.Backend.Players
 {
     public class RegresivePlayer : CleverPlayer
     {
@@ -13,8 +9,8 @@ namespace prisoneers_dilema.Backend.Players
 
         public override void NewMove()
         {
-            int otherPlayerIndex = InGamePlayer == 0 ? 
-                1 
+            int otherPlayerIndex = InGamePlayer == 0 ?
+                1
                 : 0;
 
             float[] possibleRewards;
@@ -23,10 +19,10 @@ namespace prisoneers_dilema.Backend.Players
             prevision = RegresiveSelection(otherPlayerIndex);
             possibleRewards = GetPossibleRewards(otherPlayerIndex, prevision);
 
-            Cooperate = (Player.Selection) (
+            Cooperate = (Player.Selection)(
                 (
-                    possibleRewards[0] < possibleRewards[1]) ? 
-                    1 
+                    possibleRewards[0] < possibleRewards[1]) ?
+                    1
                     : 0
                 );
         }

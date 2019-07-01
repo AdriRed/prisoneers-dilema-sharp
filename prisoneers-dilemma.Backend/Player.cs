@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend
+﻿namespace prisoneers_dilema.Backend
 {
     public abstract class Player
     {
@@ -25,12 +21,12 @@ namespace prisoneers_dilema.Backend
             get; set;
         }
 
-        static Player ()
+        static Player()
         {
             PlayerCount = 0;
         }
 
-        public Player (float money, string name = "Default Player")
+        public Player(float money, string name = "Default Player")
         {
             Money = money;
             Data = new PlayerData(PlayerCount, name);

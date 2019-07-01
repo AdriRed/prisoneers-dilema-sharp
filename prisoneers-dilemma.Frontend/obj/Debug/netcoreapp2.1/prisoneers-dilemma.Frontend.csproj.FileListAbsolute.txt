@@ -1,7 +1,3 @@
-C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.csprojAssemblyReference.cache
-C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.csproj.CoreCompileInputs.cache
-C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.AssemblyInfoInputs.cache
-C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.AssemblyInfo.cs
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.deps.json
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.runtimeconfig.json
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.runtimeconfig.dev.json
@@ -9,6 +5,10 @@ C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.pdb
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.dll
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\bin\Debug\netcoreapp2.1\prisoneers-dilemma.Backend.pdb
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.csprojAssemblyReference.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.csproj.CoreCompileInputs.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.AssemblyInfoInputs.cache
+C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.AssemblyInfo.cs
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.csproj.CopyComplete
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.dll
 C:\Users\arojo\Desktop\GITS\prisoneers-dilema-sharp\prisoneers-dilemma.Frontend\obj\Debug\netcoreapp2.1\prisoneers-dilemma.Frontend.pdb

@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend
+﻿namespace prisoneers_dilema.Backend
 {
     public class Round
     {
         private Player _player1;
         private Player _player2;
-        private ILogic _rules;
+        private Logic _rules;
 
         public RoundData Data { get; private set; }
 
-        public Round(Player player1, Player player2, ILogic rules)
+        public Round(Player player1, Player player2, Logic rules)
         {
             _player1 = player1;
             _player2 = player2;
@@ -45,9 +41,9 @@ namespace prisoneers_dilema.Backend
         public Player.Selection[] Selections;
         public float[] DeltaMoney;
         public float[] MoneyBefore;
-        public ILogic Logic;
+        public Logic Logic;
 
-        public RoundData(Player player1, Player player2, ILogic logic)
+        public RoundData(Player player1, Player player2, Logic logic)
         {
             Players = new PlayerData[] { player1.Data, player2.Data };
             Selections = new Player.Selection[] { player1.Cooperate, player2.Cooperate };

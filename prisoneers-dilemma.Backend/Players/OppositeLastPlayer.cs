@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace prisoneers_dilema.Backend.Players
+﻿namespace prisoneers_dilema.Backend.Players
 {
     public class OppositeLastPlayer : YourLastPlayer
     {
@@ -26,8 +22,8 @@ namespace prisoneers_dilema.Backend.Players
 
         protected Selection InvertSelection(Selection last)
         {
-            return ((int)last == 0) ? 
-                (Selection)1 
+            return ((int)last == 0) ?
+                (Selection)1
                 : (Selection)0;
         }
     }
